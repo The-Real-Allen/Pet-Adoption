@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Carousel.css";
 import img1 from "./Images/dog1.jpg";
 import img2 from "./Images/cat.jpg";
@@ -18,7 +18,6 @@ function Carousel() {
     return () => clearInterval(timer); // Cleanup the timer on component unmount
   }, []);
 
-
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
@@ -34,7 +33,7 @@ function Carousel() {
   };
 
   return (
-    < motion.div className="carousel-section" >
+    <motion.div className="carousel-section">
       {/* Navigation Arrows */}
       {/* <BsArrowLeftCircleFill
         className="arrow arrow-left"
@@ -46,7 +45,13 @@ function Carousel() {
       /> */}
 
       {/* Carousel Slides */}
-      <motion.div  initial={{ x: "100%"}} animate={{x:"0"}} exit={{x:"-100%"}} transition={{duration:"0.2",}}  className="carousel-slides" >
+      <motion.div
+        initial={{ x: "100%" }}
+        animate={{ x: "0" }}
+        exit={{ x: "-100%" }}
+        transition={{ duration: "0.2" }}
+        className="carousel-slides"
+      >
         {slidesData.map((slide, index) => (
           <img
             className={`carousel-img ${
@@ -60,7 +65,13 @@ function Carousel() {
       </motion.div>
 
       {/* Indicators */}
-      <motion.div className="indicators" initial={{ x: "100%"}} animate={{x:"0"}} exit={{x:"-100%"}} transition={{duration:"0.2",}}>
+      <motion.div
+        className="indicators"
+        initial={{ x: "100%" }}
+        animate={{ x: "0" }}
+        exit={{ x: "-100%" }}
+        transition={{ duration: "0.2" }}
+      >
         {slidesData.map((_, index) => (
           <button
             className={`indicator ${

@@ -12,36 +12,34 @@ function Contact() {
   const navigate = useNavigate();
   const formRef = useRef();
 
-  
-     // Ensure this is the form element
+  // Ensure this is the form element
+  // Send email using EmailJS
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
     // Send email using EmailJS
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      const form = e.target;
-      // Send email using EmailJS
-      emailjs
-        .sendForm(
-          "service_y86a2i8", // Your Service ID
-          "template_ckqaqcb", // Your Template ID
-          formRef.current, // Form reference (this is important to correctly bind the form data)
-          "A5P8PNobY-AL6uP24" // Your Public Key
-        )
-        .then(
-          (result) => {
-            alert("Email sent successfully!");
-            console.log(result.text); // This logs the response from EmailJS (useful for debugging)
-          },
-          (error) => {
-            alert("Failed to send email. Please try again.");
-            console.log(error.text); // Logs detailed error message from EmailJS
-          }
-        )
-        .catch((error) => {
-          // This will catch any other unexpected errors
-          console.log(error);
-          alert("Failed to send email. Please check your input.");
-        });
-    
+    emailjs
+      .sendForm(
+        "service_y86a2i8", // Your Service ID
+        "template_ckqaqcb", // Your Template ID
+        formRef.current, // Form reference (this is important to correctly bind the form data)
+        "A5P8PNobY-AL6uP24" // Your Public Key
+      )
+      .then(
+        (result) => {
+          alert("Email sent successfully!");
+          console.log(result.text); // This logs the response from EmailJS (useful for debugging)
+        },
+        (error) => {
+          alert("Failed to send email. Please try again.");
+          console.log(error.text); // Logs detailed error message from EmailJS
+        }
+      )
+      .catch((error) => {
+        // This will catch any other unexpected errors
+        console.log(error);
+        alert("Failed to send email. Please check your input.");
+      });
   };
 
   const handleClose = () => {

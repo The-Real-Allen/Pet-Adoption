@@ -3,7 +3,6 @@
   width: 800px;
   background-color: rgb(255, 255, 255);
 
-
   border-radius: 8px;
   position: absolute;
   top: 50px;
@@ -15,7 +14,7 @@
 .contact-container1 {
   background-color: aliceblue;
   opacity: 0.7;
-   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   backdrop-filter: blur(8px); /* Adjust blur intensity */
   z-index: 101; /* Ensure it appears above the page but below the popover */
 }

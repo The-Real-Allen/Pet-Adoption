@@ -1,6 +1,5 @@
 .home2-container {
-
- min-height: 110vh;
+  min-height: 110vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -12,7 +11,7 @@
 }
 .home2-filter {
   justify-content: center;
- min-height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: antiquewhite;
   opacity: 0.8;
@@ -37,17 +36,16 @@
   height: 310px;
   width: 300px;
   box-shadow: 0px 0px 25px rgb(224, 224, 110);
- 
 }
-.pet-card-inner img:hover{
-    transform: scale(0.9)!important;;
-    transition: transform 0.3s;
-}
-.pet-card.flipped:hover{
-  transform: scale(0.9)!important;;
+.pet-card-inner img:hover {
+  transform: scale(0.9) !important;
   transition: transform 0.3s;
 }
-.pet-card-inner { 
+.pet-card.flipped:hover {
+  transform: scale(0.9) !important;
+  transition: transform 0.3s;
+}
+.pet-card-inner {
   position: relative;
   width: 100%;
   height: 310px; /* Adjust as needed */
@@ -58,7 +56,7 @@
 }
 
 .pet-card.flipped .pet-card-inner {
-  transform: rotateY(180deg)!important;
+  transform: rotateY(180deg) !important;
   width: 100%;
   height: 310px;
 }
@@ -74,8 +72,6 @@
   transition: all 0.5s ease;
 }
 
-
-
 .pet-card-back {
   background-color: #fff; /* Adjust as needed */
   transform: rotateY(180deg);
@@ -86,26 +82,24 @@
   padding: 10px;
   border: 2px solid #efd47a;
   box-shadow: 0px 0px 25px rgb(224, 224, 110);
-
 }
-.filter-options-col button{
-
+.filter-options-col button {
   background-color: #e4970a;
   color: #f9f9f9;
 }
-.filter-options-col button:hover{
+.filter-options-col button:hover {
   background-color: #e4970a;
   color: #f9f9f9;
   transform: scale(1.1);
   transition: all 0.5s;
 }
-.filter-icon{
+.filter-icon {
   font-size: 1.6rem; /* Adjust size */
-  color: #070707;    /* Match the yellow color */
+  color: #070707; /* Match the yellow color */
   box-shadow: 0px 0px 25px rgb(224, 224, 110); /* Glowing effect */
   border-radius: 50%; /* Optional, if you want a rounded icon look */
   padding: 0.1rem;
-  background-color: #fff;    /* Optional, for spacing around the icon */
+  background-color: #fff; /* Optional, for spacing around the icon */
 }
 .pet-card {
   perspective: 1000px; /* Creates 3D perspective */
