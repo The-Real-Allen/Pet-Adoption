@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+.navbar{
+position: fixed;z-index: 100;
+}
+
+.navbar-nav,
+.navbar-brand {
+  height: 50px;
+
+}
+
+.navbar-brand {
+  width: 40px;
+}
+
+
+
+
+.nav-link:hover {
+  border-bottom: 4px solid #e4970a;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.navrightbtn {
+  background-color: #e4970a!important;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid;
+  color: antiquewhite !important;
+}
+
+.navrightbtn:hover {
+  background-color: #e4970a!important;
+  transform: scale(1.1);
+  transition: all 0.3s;
+  color: antiquewhite !important;
+  
+}

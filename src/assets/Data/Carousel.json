@@ -1,0 +1,16 @@
+{
+  "Slides": [
+    {
+      "src": "./Images/register-img.png",
+      "alt": "img 1"
+    },
+    {
+      "src": "./Images/brown-labrador-retriever-white_155003-11361.jpg",
+      "alt": "img 2"
+    },
+    {
+      "src": "./Images/Register-img.png",
+      "alt": "img 3"
+    }
+  ]
+}
