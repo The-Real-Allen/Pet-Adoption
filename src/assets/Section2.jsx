@@ -123,8 +123,7 @@ function Section2() {
 
     if (petType) filtered = filtered.filter((pet) => pet.type === petType);
     if (petBreed) filtered = filtered.filter((pet) => pet.breed === petBreed);
-    if (petGender)
-      filtered = filtered.filter((pet) => pet.gender === petGender);
+    if (petGender) filtered = filtered.filter((pet) => pet.gender === petGender);
     if (petAge) filtered = filtered.filter((pet) => pet.age === petAge);
 
     setFilteredPets(filtered);
